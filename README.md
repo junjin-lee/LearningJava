@@ -1,9 +1,9 @@
 # java中必须了解的常用类
 ## java中的包装类
-为何有包装类的出现？
-基本数据类型不具备对象的特性，比如基本类型不能调用方法、功能简单。
-为了让基本数据类型也具备对象的特性， Java 为每个基本数据类型都提供了一个包装类，这样就可以像操作对象那样来操作基本数据类型。 
-每个基本类型都有相对应的包装类
+为何有包装类的出现？<br>
+基本数据类型不具备对象的特性，比如基本类型不能调用方法、功能简单。<br>
+为了让基本数据类型也具备对象的特性， Java 为每个基本数据类型都提供了一个包装类，这样就可以像操作对象那样来操作基本数据类型。<br> 
+每个基本类型都有相对应的包装类<br>
 ![Alt text](https://github.com/junjin-lee/LearningJava/blob/master/doc/Picture3.png)
 
 包装类主要提供了两大类方法：
@@ -11,40 +11,40 @@
 2. 将字符串和本类型及包装类互相转换的方法
 
 ## Date类和SimpleDateFormat
-在程序开发中，经常需要处理日期和时间的相关数据，此时可以使用 java.util 包中的 Date 类
-这个类最主要的作用就是获取当前时间，我们来看下 Date 类的使用： 
-Date d = new Date();//使用默认的构造方法创建Date对象 
-System.out.println(d);//输出Date对象
-SimpleDateFormat 来对日期时间进行格式化，如可以将日期转换为指定格式的文本，也可将文本转换为日期。
+在程序开发中，经常需要处理日期和时间的相关数据，此时可以使用 java.util 包中的 Date 类<br>
+这个类最主要的作用就是获取当前时间，我们来看下 Date 类的使用：<br> 
+Date d = new Date();//使用默认的构造方法创建Date对象 <br>
+System.out.println(d);//输出Date对象<br>
+SimpleDateFormat 来对日期时间进行格式化，如可以将日期转换为指定格式的文本，也可将文本转换为日期。<br>
 
 ## Calendar 类的应用
-java.util.Calendar 类是一个抽象类，可以通过调用 getInstance() 静态方法获取一个 Calendar 对象，此对象已由当前日期时间初始化，即默认代表当前时间，
-如 Calendar c = Calendar.getInstance();
+java.util.Calendar 类是一个抽象类，可以通过调用 getInstance() 静态方法获取一个 Calendar 对象，此对象已由当前日期时间初始化，即默认代表当前时间，<br>
+如 Calendar c = Calendar.getInstance();<br>
 
 ## 使用 Math 类操作数据
 Math 类位于 java.lang 包中，包含用于执行基本数学运算的方法， Math 类的所有方法都是静态方法，所以使用该类中的方法时，可以直接使用类名.方法名，
 如： Math.round();
-
+![Alt text](https://github.com/junjin-lee/LearningJava/blob/master/doc/Picture2.png)
 ## String类
-　直接赋值方式创建对象是在方法区的常量池
-     String str="hello";//直接赋值的方式 
-   通过构造方法创建字符串对象是在堆内存
-   String str=new String("hello");//实例化的方式 
-
+直接赋值方式创建对象是在方法区的常量池<br>
+String str="hello";//直接赋值的方式 <br>
+通过构造方法创建字符串对象是在堆内存<br>
+String str=new String("hello");//实例化的方式 <br>
+---
 
 # 集合详解
 定义：Java中的集合类：是一种工具类，就像是容器，存储任意数量的具有共同属性的对象。
 作用：
 集合可以：
-1、在类的内部，对数据进行组织；
-2、简单而快速的搜索大数量的条目；
-3、有的集合接口，提供了一系列排列有序的元素，并且可以在序列中间快速的插入或者删除元素；
-4、有的集合接口，提供了映射关系，可以通过关键字（key）快速的查找到对应的唯一对象，而这个关键字可以是任意类型。
-与数组的对比：
-1、数组的长度固定，集合长度可变；
-2、数组只能通过下标访问元素，下标类型只能是数字型，而有的集合可以通过任意类型查找所映射的具体对象。
+1、在类的内部，对数据进行组织；<br>
+2、简单而快速的搜索大数量的条目；<br>
+3、有的集合接口，提供了一系列排列有序的元素，并且可以在序列中间快速的插入或者删除元素；<br>
+4、有的集合接口，提供了映射关系，可以通过关键字（key）快速的查找到对应的唯一对象，而这个关键字可以是任意类型。<br>
+与数组的对比：<br>
+1、数组的长度固定，集合长度可变；<br>
+2、数组只能通过下标访问元素，下标类型只能是数字型，而有的集合可以通过任意类型查找所映射的具体对象。<br>
 Java集合框架的体系结构
-
+![Alt text](https://github.com/junjin-lee/LearningJava/blob/master/doc/Picture1.png)
 
 Collection接口
 1、是List、Set和Queue接口的父接口；
@@ -73,7 +73,7 @@ HashMap是Map的一个重要实现类，也是最常用的，基于哈希表实�
 HashMap中的Entry对象是无序排列的；
 Key值和value值都可以为null，但是一个HashMap只能有一个Key值为null的映射（Key值不可重复）；
 
-
+---
 
 # 泛型（Generics）
 泛型是Java SE 1.5的新特性，泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。这种参数类型可以用在类、接口和方法的创建中，分别称为泛型类、泛型接口、泛型方法。

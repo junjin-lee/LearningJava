@@ -30,6 +30,7 @@ Math 类位于 java.lang 包中，包含用于执行基本数学运算的方法�
 String str="hello";//直接赋值的方式 <br>
 通过构造方法创建字符串对象是在堆内存<br>
 String str=new String("hello");//实例化的方式 <br>
+
 ---
 
 # 集合详解

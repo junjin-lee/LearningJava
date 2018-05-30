@@ -47,31 +47,31 @@ Java集合框架的体系结构
 ![Alt text](https://github.com/junjin-lee/LearningJava/blob/master/doc/Picture1.png)
 
 Collection接口
-1、是List、Set和Queue接口的父接口；
-2、定义了可用于操作List、Set和Queue的方法——增删改查；
-List接口及其实现类——ArrayList
-List（序列），元素有序，并且可重复；
-List可以精确控制元素的插入位置，或删除指定位置的元素；
-ArrayList——数组序列，是List的一个重要实现类；
-ArrayList底层是由数组实现的
-泛型集合中，不能添加泛型规定的类型及其子类型以外的对象，否则会报错。
-泛型集合中的限定类型，不能使用基本类型，必须用基本类型的包装类。
-Set接口及其实现类——HashSet
-Set（集），元素无序，并且不可以重复；
-HashSet——哈希集，是Set的一个重要实现类；
+1、是List、Set和Queue接口的父接口；<br>
+2、定义了可用于操作List、Set和Queue的方法——增删改查；<br>
+List接口及其实现类——ArrayList<br>
+List（序列），元素有序，并且可重复；<br>
+List可以精确控制元素的插入位置，或删除指定位置的元素；<br>
+ArrayList——数组序列，是List的一个重要实现类；<br>
+ArrayList底层是由数组实现的<br>
+泛型集合中，不能添加泛型规定的类型及其子类型以外的对象，否则会报错。<br>
+泛型集合中的限定类型，不能使用基本类型，必须用基本类型的包装类。<br>
+Set接口及其实现类——HashSet <br>
+Set（集），元素无序，并且不可以重复；<br>
+HashSet——哈希集，是Set的一个重要实现类；<br>
 
-Map接口
-Map提供了一种映射关系，元素是以键值对（key-value）的形式存储的，能根据key快速查找value；
-Map中的键值对以Entry类型的对象实例形式存在；
-key值不能重复，value值可以重复；
-key对value是多（一）对一的关系；
-Map接口提供了返回key值集合、value值集合、Entry值集合，的方法；
-Map支持泛型，形式如：Map<K,V>
+Map接口<br>
+Map提供了一种映射关系，元素是以键值对（key-value）的形式存储的，能根据key快速查找value；<br>
+Map中的键值对以Entry类型的对象实例形式存在；<br>
+key值不能重复，value值可以重复；<br>
+key对value是多（一）对一的关系；<br>
+Map接口提供了返回key值集合、value值集合、Entry值集合，的方法；<br>
+Map支持泛型，形式如：Map<K,V><br>
 
-HashMap类
-HashMap是Map的一个重要实现类，也是最常用的，基于哈希表实现；
-HashMap中的Entry对象是无序排列的；
-Key值和value值都可以为null，但是一个HashMap只能有一个Key值为null的映射（Key值不可重复）；
+HashMap类<br>
+HashMap是Map的一个重要实现类，也是最常用的，基于哈希表实现；<br>
+HashMap中的Entry对象是无序排列的；<br>
+Key值和value值都可以为null，但是一个HashMap只能有一个Key值为null的映射（Key值不可重复）；<br>
 
 ---
 

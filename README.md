@@ -4,15 +4,8 @@
 基本数据类型不具备对象的特性，比如基本类型不能调用方法、功能简单。
 为了让基本数据类型也具备对象的特性， Java 为每个基本数据类型都提供了一个包装类，这样就可以像操作对象那样来操作基本数据类型。 
 每个基本类型都有相对应的包装类
-基本类型　	包装器类型
-boolean	   Boolean
-char	   Character
-int	   Integer
-byte	   Byte
-short	   Short
-long	   Long
-float	   Float
-double	   Double
+![Alt text](https://github.com/junjin-lee/LearningJava/blob/master/doc/Picture3.png)
+
 包装类主要提供了两大类方法：
 1. 将本类型和其他基本类型进行转换的方法
 2. 将字符串和本类型及包装类互相转换的方法
